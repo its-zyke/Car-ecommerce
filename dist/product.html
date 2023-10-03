@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- navbar start-->
-    <nav class="relative container mx-auto p-6 lg:px-[80px]">
+    <nav class="relative container mx-auto p-6 lg:px-[80px] z-50">
       <!-- Flex container -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -64,7 +64,7 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="md:hidden">
+      <div class="md:hidden z-50">
         <div
           id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
@@ -96,7 +96,7 @@
     >
       <!-- filter starts -->
       <div
-        class="relative bg-white w-full px-6 py-3 cursor-pointer select-none md:w-1/3 flex justify-between border rounded-md border-gray-300"
+        class="relative bg-white w-full px-6 py-3 cursor-pointer select-none md:w-1/3 flex justify-between border rounded-md border-gray-300 z-0"
         onclick="toggleDropdown()"
         id="dropdownButton"
       >
