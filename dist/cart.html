@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Ecommerce PJ</title>
     <link rel="stylesheet" href="output.css" />
-    <scrip src="script.js"></script>
+    <script src="script.js"></script>
   </head>
-
+  <body>
     <!-- navbar section start-->
     <nav class="relative container mx-auto p-6 lg:px-[80px]">
       <!-- Flex container -->
@@ -90,108 +90,11 @@
     </nav>
     <!-- navbar section end -->
 
-    <!-- product detail section starts-->
-    <section class="py-6 bg-white">
-        <div class="max-w-6xl px-1 mx-auto">
-          <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-8 md:w-1/2 md:mb-1">
-              <div class="sticky top-0 z-50 overflow-hidden">
-                <div class="relative">
-                  <a class="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2 ml-2" href="#" onclick="prevImage()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-[40px] h-[40px] bi bi-chevron-left text-primary bg-white p-2 rounded-[50%]" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-                    </svg>
-                  </a>
-                  <img id="productImage" class="object-cover w-full lg:h-1/2 rounded" src="img/car1.png" alt="">
-                  <a class="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2 mr-2" href="#" onclick="nextImage()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-[40px] h-[40px] bi bi-chevron-right text-primary bg-white p-2 rounded-[50%]" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </a>
-                </div>
-                <!-- Rest of your code -->
-                <div class="flex-wrap hidden -mx-2 md:flex">
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car1.png" alt="">
-                      </a>
-                    </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car3.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car4.jpg" alt="">
-                      </a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="w-full px-4 md:w-1/2">
-              <!-- The rest of your content on the right side -->
-              <div class="flex flex-col gap-2 py-2">
-                <h1 class="font-bold text-2xl md:text-3xl">Product Name</h1>
-                <span class="font-normal mt-1 text-md text-md text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate, neque repellat nemo illum corporis deserunt repellendus vero quasi labore minima eligendi asperiores exercitationem, nesciunt magnam deleniti? Sed, nesciunt placeat.</span>
-                <div class="flex gap-2 mb-4 mt-2">
-                  <div
-                    class="text-xs font-medium px-3 py-1 uppercase rounded-full bg-gray-300"
-                  >
-                    category
-                  </div>
-                  <div
-                    class="text-xs font-medium px-3 py-1 uppercase rounded-full bg-gray-300"
-                  >
-                    category
-                  </div>
-                </div>
-                <button class="bg-primary text-white uppercase p-3 rounded">ADD TO CART</button>
-                <button class="border border-primary text-primary uppercase p-3 rounded">back to shopping</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- script for product details img -->
-      <script>
-        // Array of local image filenames
-        const images = [
-          "car1.png",
-          "car2.jpg",
-          "car3.jpg",
-          "car4.jpg",
-          // Add more image filenames here
-        ];
-      
-        // Initialize index to 0
-        let currentIndex = 0;
-      
-        // Function to display the previous image
-        function prevImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          updateImage();
-        }
-      
-        // Function to display the next image
-        function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          updateImage();
-        }
-      
-        // Function to update the displayed image
-        function updateImage() {
-          const productImage = document.getElementById("productImage");
-          productImage.src = "img/" + images[currentIndex];
-        }
-      </script>
-      <!-- script for product details img end -->
-    <!-- product detail section ends -->
+    <!-- hero section starts -->
+    <div>
+      <h1>this is cart page hero section</h1>
+    </div>
+    <!-- hero section ends -->
 
     <!-- footer -->
     <!-- ====== Footer Section Start -->
@@ -319,9 +222,5 @@
       </div>
     </footer>
     <!-- ====== Footer Section End -->
-    
   </body>
 </html>
-  
-
-  
