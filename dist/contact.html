@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="relative container mx-auto p-6 lg:px-[80px]">
+    <nav class="relative container mx-auto p-6 lg:px-[80px] z-50">
       <!-- Flex container -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -24,6 +24,11 @@
             href="product.html"
             class="nav-link text-gray-500 hover:text-primary"
             >Products</a
+          >
+          <a
+            href="category.html"
+            class="nav-link text-gray-500 hover:text-primary"
+            >Category</a
           >
           <a href="about.html" class="nav-link text-gray-500 hover:text-primary"
             >About Us</a
@@ -64,7 +69,7 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="md:hidden">
+      <div class="md:hidden z-50">
         <div
           id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
@@ -76,6 +81,11 @@
             href="product.html"
             class="nav-link text-gray-500 hover:text-primary nav-link"
             >Products</a
+          >
+          <a
+            href="category.html"
+            class="nav-link text-gray-500 hover:text-primary nav-link"
+            >Category</a
           >
           <a href="about.html" class="nav-link text-gray-500 hover:text-primary"
             >About Us</a
