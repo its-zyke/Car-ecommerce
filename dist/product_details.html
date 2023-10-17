@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Ecommerce PJ</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <scrip src="script.js"></script>
   </head>
 
@@ -106,42 +110,52 @@
           <div class="flex flex-wrap">
             <div class="w-full px-4 mb-8 md:w-1/2 md:mb-1">
               <div class="sticky top-0 z-50 overflow-hidden">
-                <div class="relative">
-                  <a class="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2 ml-2" href="#" onclick="prevImage()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-[40px] h-[40px] bi bi-chevron-left text-primary bg-white p-2 rounded-[50%]" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-                    </svg>
-                  </a>
-                  <img id="productImage" class="object-cover w-full lg:h-1/2 rounded" src="img/car1.png" alt="">
-                  <a class="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2 mr-2" href="#" onclick="nextImage()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-[40px] h-[40px] bi bi-chevron-right text-primary bg-white p-2 rounded-[50%]" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </a>
-                </div>
-                <!-- Rest of your code -->
-                <div class="flex-wrap hidden -mx-2 md:flex">
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car1.png" alt="">
-                      </a>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 select-none w-full h-full">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car1.png" class="w-full h-full object-cover" />
                     </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car2.jpg" alt="">
-                      </a>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car2.jpg" class="w-full h-full object-cover" />
                     </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car3.jpg" alt="">
-                      </a>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car3.jpg" class="w-full h-full object-cover" />
                     </div>
-                    <div class="w-1/2 p-1 sm:w-1/4">
-                      <a class="block border border-transparent hover:border-blue-400" href="#">
-                        <img class="object-cover w-full lg:h-32" src="img/car4.jpg" alt="">
-                      </a>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car4.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car5.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car6.jpg" class="w-full h-full object-cover" />
                     </div>
                   </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper mt-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car1.png" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car2.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car3.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car4.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car5.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="swiper-slide rounded-md overflow-hidden">
+                      <img src="./img/car6.jpg" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="w-full px-4 md:w-1/2">
@@ -168,41 +182,8 @@
           </div>
         </div>
       </section>
-      <!-- script for product details img -->
-      <script>
-        // Array of local image filenames
-        const images = [
-          "car1.png",
-          "car2.jpg",
-          "car3.jpg",
-          "car4.jpg",
-          // Add more image filenames here
-        ];
-      
-        // Initialize index to 0
-        let currentIndex = 0;
-      
-        // Function to display the previous image
-        function prevImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          updateImage();
-        }
-      
-        // Function to display the next image
-        function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          updateImage();
-        }
-      
-        // Function to update the displayed image
-        function updateImage() {
-          const productImage = document.getElementById("productImage");
-          productImage.src = "img/" + images[currentIndex];
-        }
-      </script>
-      <!-- script for product details img end -->
     <!-- product detail section ends -->
-
+    
     <!-- footer -->
     <!-- ====== Footer Section Start -->
     <footer class="bg-white">
@@ -329,7 +310,33 @@
       </div>
     </footer>
     <!-- ====== Footer Section End -->
-    
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+  <!-- Initialize Swiper -->
   </body>
 </html>
   
